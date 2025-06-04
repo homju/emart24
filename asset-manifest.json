@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "/pages/emart24.git/static/css/main.31d6cfe0.css",
+    "main.js": "/pages/emart24.git/static/js/main.6fed3b59.js",
+    "index.html": "/pages/emart24.git/index.html",
+    "main.6fed3b59.js.map": "/pages/emart24.git/static/js/main.6fed3b59.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.6fed3b59.js"
+  ]
+}
