@@ -1,0 +1,73 @@
+
+[ gh-pages 배포하기]
+
+1. gh-pages 패키지
+
+  npm install gh-pages
+
+  (또는 yarn 사용시)
+
+  yarn add gh-pages
+
+ 
+
+2. package.json 수정
+
+  "scripts": {
+
+           (...)
+
+          "predeploy": "npm run build",
+
+          "deploy": "gh-pages -d build"
+
+   },
+
+2-1. dependencies와 private 사이에   "homepage": "https://bam-j.github.io/pages/", 입력
+
+ 
+
+3. 깃허브에 업로드
+
+  git init
+  git add .
+  git commit -m "first commit"
+  git branch -M main
+  git remote add origin https://github.com/gomaci/kkkk.git(깃허브주소)
+  git push -u origin main
+
+ 
+
+4. 빌드하고 배포하기
+
+  npm run deploy 
+
+ 
+
+5 현재 저장소의 홈이 보이지않을때  basename={process.env.PUBLIC_URL} 입력
+
+ <BrowserRouter basename={process.env.PUBLIC_URL}>
+
+    <App />
+
+  </BrowserRouter>
+
+ 
+
+ 
+
+6. 업데이트
+
+git add .
+
+git commit -m "메시지"
+
+git push -u origin main
+
+----------------------------> 새로운 버전이 업데이트 됨
+
+ 
+
+[패키지 배포]
+
+다시 npm run deploy 
